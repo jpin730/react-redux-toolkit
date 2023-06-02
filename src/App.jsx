@@ -1,4 +1,4 @@
-import { Counter } from "./components";
+import { Counter, Pokemon } from "./components";
 
 export const App = () => {
   const cardClasses = "bg-white border rounded p-5 my-5";
@@ -9,6 +9,10 @@ export const App = () => {
 
       <div className={cardClasses}>
         <Counter />
+      </div>
+
+      <div className={cardClasses}>
+        <Pokemon />
       </div>
     </div>
   );
