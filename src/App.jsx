@@ -1,19 +1,14 @@
-import { useState } from "react";
+import { Counter } from "./components";
 
 export const App = () => {
-  const [count, setCount] = useState(0);
+  const cardClasses = "bg-white border rounded p-5 my-5";
 
   return (
-    <div className="container my-5">
-      <h1>React Redux Toolkit</h1>
+    <div className="container">
+      <h1 className="my-3">React Redux Toolkit</h1>
 
-      <div className="my-4">
-        <button
-          className="btn btn-primary btn-lg"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          count is {count}
-        </button>
+      <div className={cardClasses}>
+        <Counter />
       </div>
     </div>
   );
