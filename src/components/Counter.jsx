@@ -16,9 +16,7 @@ export const Counter = () => {
       <h2>Counter</h2>
       <hr />
 
-      <div className="alert alert-info text-center">count is {count}</div>
-
-      <div className="d-flex justify-content-center gap-3">
+      <div className="d-flex justify-content-center gap-3 mb-3">
         <button
           className="btn btn-primary font-monospace px-4 px-sm-5"
           onClick={onIncrement}
@@ -38,6 +36,8 @@ export const Counter = () => {
           {(step > 0 && "+") + step}
         </button>
       </div>
+
+      <div className="alert alert-info text-center">count is {count}</div>
     </>
   );
 };

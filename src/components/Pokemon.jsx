@@ -29,12 +29,8 @@ export const Pokemon = () => {
   );
 
   const pokemonList = (
-    <div className="d-flex justify-content-center gap-1 flex-wrap">
-      {pokemons.map(({ name }) => (
-        <span className="badge rounded-pill text-bg-info px-3 py-2" key={name}>
-          {name}
-        </span>
-      ))}
+    <div className="alert alert-info text-center">
+      {pokemons.map(({ name }) => name).join(", ")}
     </div>
   );
 
