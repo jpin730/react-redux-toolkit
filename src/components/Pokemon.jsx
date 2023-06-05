@@ -40,7 +40,11 @@ export const Pokemon = () => {
       <hr />
 
       <div className="d-flex mb-3">
-        <button className="btn btn-primary px-5 mx-auto" onClick={onClickNext}>
+        <button
+          className="btn btn-primary px-5 mx-auto"
+          onClick={onClickNext}
+          disabled={isLoading}
+        >
           Next
         </button>
       </div>
